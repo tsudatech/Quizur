@@ -11,6 +11,10 @@ body * {
   color: #3e3e3e;
 }
 
+.is-scrollIn {
+  opacity: 1 !important;
+}
+
 /* ======================================================= */
 /* トップページ */
 /* ======================================================= */
@@ -21,10 +25,14 @@ body * {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, transform;
 }
 
 .page.first {
   flex-direction: row;
+  opacity: 1;
 }
 
 .left {
@@ -49,6 +57,9 @@ body * {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, transform;
 }
 
 .first .title {
@@ -74,6 +85,9 @@ body * {
 
 .appscreen1 {
   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity, transform;
 }
 
 /* ======================================================= */

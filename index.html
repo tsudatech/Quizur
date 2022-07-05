@@ -11,7 +11,7 @@
   <div class="page first">
     <div class="left">
       <div class="top-elm">
-        <div class="title">Quizur</div>
+        <div class="title ">Quizur</div>
         <div class="sub-title">問題作成アプリ</div>
         <div class="appstore">
           <img  src="images/appstore.png">
@@ -23,7 +23,7 @@
     </div>    
   </div>
 
-  <div class="page second">
+  <div class="page second js-fadeIn">
     <div class="small-circle"></div>
     <div class="appeal">
       <div class="big">Quizurは <span class="strong">シンプルさ</span> にこだわった</div>
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <div class="page third">
+  <div class="page third js-fadeIn">
     <div class="title">シンプルでわかりやすい</div>
     <div class="images">
       <img src="images/appscreen2.png">
@@ -43,7 +43,7 @@
     <div class="text">直感的に理解できるようシンプルなデザインで複雑な設定は不要です。</div>
   </div>
 
-  <div class="page fourth">
+  <div class="page fourth js-fadeIn">
     <div class="title">機能仕様</div>
     <div class="functions">
       <div class="function">
@@ -83,10 +83,32 @@
     </div>
   </div>
 
-  <div class="footer">
+  <div class="footer js-fadeIn">
     <div class="title">Quizur</div>
     <div class="line"></div>
     <div class="text">Copyright © 2022 Quizur. All Rights Reserved.</div>
   </div>
+
 </body>
+<script>
+  let els = document.querySelectorAll('.js-fadeIn');
+  els.forEach(function(fadeIn) {
+    let windowHeight = window.innerHeight;
+    window.addEventListener('scroll', function() {
+      let offset = fadeIn.getBoundingClientRect().top;
+      let scroll = window.scrollY;
+      if (scroll > offset * 3) {
+        fadeIn.classList.add('is-scrollIn');
+      }
+    })
+  })
+
+  let topElm = document.querySelectorAll('.top-elm');
+  topElm[0].classList.add('is-scrollIn');
+
+  let appscreen1 = document.querySelectorAll('.appscreen1');
+  appscreen1[0].classList.add('is-scrollIn');
+
+
+</script>
 </html>
