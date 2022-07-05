@@ -71,6 +71,11 @@ body {
 /* 2個目 */
 /* ======================================================= */
 
+.page.second {
+  flex-direction: column;
+  position: relative;
+}
+
 .appeal {
   width: 100%;
   padding-left: 8%;
@@ -93,4 +98,26 @@ body {
 .small {
   margin-top: 40px;
   font-size: 20px;
+}
+
+.small-circle {
+  background-color: #93A4BF;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  margin-bottom: 100px;
+  position: absolute;
+  top: 104px;
+  left: 8%;
+}
+
+.big-circle {
+  background-color: #93A4BF;
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+  margin-bottom: 100px;
+  position: absolute;
+  bottom: 104px;
+  right: 8%;
 }
