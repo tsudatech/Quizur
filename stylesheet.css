@@ -420,17 +420,13 @@ body * {
     margin-bottom: 16px;
   }
 
-  .appscreen1-container {
-    width: auto;
-    height: 70%;
-  }
-
   .appscreen1 {
     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));
     opacity: 0;
     transition-duration: 1s;
     transition-property: opacity, transform;
-    /* height: 100%; */
+    width: auto;
+    height: 70%;
   }
 
   /* ======================================================= */
