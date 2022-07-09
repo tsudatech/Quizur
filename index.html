@@ -6,6 +6,8 @@
   <title>Quizur</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.css" integrity="sha512-kcsVKF2zQWxpZox0QJTl40HBAhKLjfcUFw2LoTdHilSuHeOSg8uo8zf6ZiIUSHgHHl0H8zRkMcqJz2w4ZH57KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.theme.css" integrity="sha512-rF+FkLhdJu8p6NNoi0y30W5xPessa8yC8/3u3p5/biTeDpsxik1XfrgfqZG/mUmJ/2cA73nArDuWnX2JQLvlmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="big-screen">
@@ -120,15 +122,24 @@
       </div>
     </div>
   
-    <!-- <div class="page third js-fadeIn">
+    <div class="page third js-fadeIn">
       <div class="title">シンプルでわかりやすい</div>
-      <div class="images">
-        <img src="images/appscreen2.png">
-        <img src="images/appscreen3.png">
-        <img src="images/appscreen4.png">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="images/appscreen2.png"></li>
+            <li class="glide__slide"><img src="images/appscreen3.png"></li>
+            <li class="glide__slide"><img src="images/appscreen4.png"></li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <div class="glide__arrow glide__arrow--left" data-glide-dir="<"><</div>
+          <div class="glide__arrow glide__arrow--right" data-glide-dir=">">></div>
+        </div>
       </div>
       <div class="text">直感的に理解できるようシンプルなデザインで複雑な設定は不要です。</div>
-    </div> -->
+    </div>
   
     <!-- <div class="page fourth js-fadeIn">
       <div class="title">機能仕様</div>
@@ -186,7 +197,10 @@
 
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.js" integrity="sha512-BDOdVHygzrUniS5DJvYBzAHyw5WQRdeVfHSaQmufCfV5s6OFnprcxMsEOAs26Bx6eTGpmlFo4owWiPpr3Voc0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+
+  new Glide('.glide').mount();
   let els = document.querySelectorAll('.js-fadeIn');
   els.forEach(function(fadeIn) {
     let windowHeight = window.innerHeight;
@@ -206,7 +220,6 @@
   let appscreen1 = document.querySelectorAll('.appscreen1');
   appscreen1[0].classList.add('is-scrollIn');
   appscreen1[1].classList.add('is-scrollIn');
-
 
 </script>
 </html>

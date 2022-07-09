@@ -500,31 +500,47 @@ body * {
   /* 3ページ目 */
   /* ======================================================= */
   .page.third {
-    position: relative;
+    padding-top: 104px;
+    padding-bottom: 104px;
   }
 
   .third .title {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
-    position: absolute;
-    top: 104px;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   .third .text {
-    font-size: 16px;
-    position: absolute;
-    bottom: 200px;
+    font-size: 14px;
+    margin: 24px 32px;
+    text-align: center;
   }
 
-  .images {
+  .glide__slide {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .images img:nth-child(2) {
-    margin-left: 48px;
-    margin-right: 48px;
+  .glide__arrow {
+    color: #3e3e3e !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 24px;
+  }
+
+  .glide__arrow--right {
+    right: 2% !important;
+  }
+
+  .glide__arrow--left {
+    left: 2% !important;
+  }
+
+  .third img {
+    height: auto;
+    width: 60%;
   }
 
   /* ======================================================= */
@@ -662,4 +678,3 @@ body * {
   }
 
 }
-
