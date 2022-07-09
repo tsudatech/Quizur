@@ -8,6 +8,7 @@ body {
 }
 
 body * {
+  height: 100%;
   color: #3e3e3e;
 }
 
@@ -30,7 +31,7 @@ body * {
   /* トップページ */
   /* ======================================================= */
   .page {
-    height: 100vh;
+    height: 100%;
     min-height: 1200px;
     width: 100%;
     display: flex;
@@ -354,7 +355,7 @@ body * {
   /* トップページ */
   /* ======================================================= */
   .page {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
