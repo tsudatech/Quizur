@@ -561,27 +561,26 @@ body * {
   /* ======================================================= */
   .page.fourth {
     position: relative;
-    background-color: #E9EDF2;
+    height: fit-content;
   }
 
   .fourth .title {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
-    position: absolute;
-    top: 104px;
-    color: #172C4D;
+    margin-bottom: 24px;
   }
 
   .functions {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .fourth .function {
     background-color: #264A80;
-    width: 360px;
-    height: 416px;
+    width: 80%;
+    height: 400px;
     padding: 32px;
     padding-top: 72px;
     display: flex;
@@ -591,6 +590,7 @@ body * {
     border-radius: 10px;
     position: relative;
     filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
+    margin-bottom: 16px;
   }
 
   .fourth .function * {
@@ -601,8 +601,8 @@ body * {
   .function .num {
     background-color: white;
     color: #264A80;
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
     border-radius: 56px;
     position: absolute;
     top: 16px;
@@ -612,11 +612,11 @@ body * {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .fourth .function .function-title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
   }
 
@@ -688,6 +688,10 @@ body * {
 
   .footer .text {
     color: white;
+  }
+
+  .blank-row {
+    height: 104px;
   }
 
 }
