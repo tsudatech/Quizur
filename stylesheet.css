@@ -107,7 +107,7 @@ body * {
     transition-duration: 1s;
     transition-property: opacity, transform;
     width: auto;
-    height: 50%;
+    height: 640px;
   }
 
   /* ======================================================= */
@@ -200,7 +200,7 @@ body * {
   }
 
   .images img {
-    height: 10%;
+    height: 560px;
     width: auto;
   }
 
@@ -209,7 +209,7 @@ body * {
   /* ======================================================= */
   .page.fourth {
     position: relative;
-    background-color: #E9EDF2;
+    /* background-color: #E9EDF2; */
   }
 
   .fourth .title {
@@ -217,7 +217,6 @@ body * {
     font-weight: bold;
     position: absolute;
     top: 104px;
-    color: #172C4D;
   }
 
   .functions {
@@ -230,7 +229,7 @@ body * {
     background-color: #264A80;
     width: 30%;
     max-width: 360px;
-    min-height: 416px;
+    height: 416px;
     padding: 32px;
     padding-top: 72px;
     display: flex;
