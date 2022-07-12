@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Yu Gothic Medium", "Hiragino Kaku Gothic ProN";
 }
 
 body * {
@@ -135,7 +135,7 @@ body * {
   .strong {
     background-color: #264a80;
     color: white;
-    padding: 16px;
+    padding: 8px 16px;
   }
 
   .small {
