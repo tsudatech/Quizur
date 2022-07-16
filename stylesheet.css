@@ -88,7 +88,7 @@ body * {
     letter-spacing: 2px;
   }
 
-  .sub-title {
+  .first .sub-title {
     font-size: 20px;
     color: white;
     margin-bottom: 24px;
@@ -307,6 +307,37 @@ body * {
   }
 
   /* ======================================================= */
+  /* 5ページ目 */
+  /* ======================================================= */
+  .page.fifth {
+    position: relative;
+  }
+
+  .fifth .title {
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    top: 104px;
+  }
+
+  .fifth .items {
+    width: fit-content
+  }
+
+  .fifth .item {
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fifth .sub-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  /* ======================================================= */
   /* footer */
   /* ======================================================= */
   .footer {
@@ -413,7 +444,7 @@ body * {
     letter-spacing: 2px;
   }
 
-  .sub-title {
+  .first .sub-title {
     margin-bottom: 12px;
     font-size: 16px;
     color: white;
@@ -655,6 +686,41 @@ body * {
 
   .fourth .function.second .line {
     border-bottom: 1px solid #264A80;
+  }
+
+  /* ======================================================= */
+  /* 4ページ目 */
+  /* ======================================================= */
+  .page.fifth {
+    position: relative;
+    height: fit-content;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .fifth .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+
+  .fifth .items {
+    width: fit-content
+  }
+
+  .fifth .item {
+    margin-bottom: 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fifth .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
   }
 
   /* ======================================================= */
