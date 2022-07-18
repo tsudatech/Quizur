@@ -456,11 +456,19 @@ body * {
     align-items: center;
     margin-right: 4px;
     margin-bottom: 16px;
+    width: 100%;
   }
 
+  .appstore a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
   .appstore img {
-    height: 70%;
-    width: auto;
+    height: auto;
+    width: 75%;
   }  
 
   .appscreen1 {
